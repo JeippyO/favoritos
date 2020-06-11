@@ -14,6 +14,7 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .ajuste-menu {
@@ -57,11 +58,18 @@ body {
   justify-content: space-between;
 }
 
+.thumb-img1 {
+  background: url(../img/w3school.jpg);
+}
+
+.thumb-img2 {
+  background: url(../img/origamid.jpg);
+}
+
 .thumb {
   background-color: #cccccc;
   width: calc(250px * (16 / 9));
   height: 250px;
-  background: url(../img/w3school.jpg);
   background-size: cover;
   position: relative;
   border: 1px solid #000;
@@ -79,7 +87,7 @@ span {
   font-weight: bold;
   letter-spacing: 2.5px;
   font-size: 1.5em;
-  background: rgba(130, 255, 130, 0.8);
+  background: rgba(130, 255, 130, 0.7);
   width: 100%;
   position: absolute;
   bottom: 0;
