@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(19, 141, 19);
+}
+.navegador, .pc, .mundo{
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: calc(100%/3);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.377);
+}
+.navegador::after, .pc::after, .mundo::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.822) inset;
+}
+.pc{
+    left: calc(100%/3);
+}
+.mundo{
+    left: calc(100%*2/3);
+}
+.titulo_secao {
+    font-size: 4rem;
+    font-family: sans-serif;
+    color: white;
+    width: max-content;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+.txt_previa {
+    font-family: serif;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.botao{
+    width: 300px;
+    height: 50px;
+    background-color: #36BF58;
+    margin: 0 auto;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #36BF58;
+}
+.botao h1 {
+    display: block;
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+    width: max-content;
+    line-height: 50px;
+    margin: 0 auto;
+}
+:hover.navegador, :hover.pc, :hover.mundo, :hover.navegador::after, :hover.pc::after, :hover.mundo::after{
+    box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.61);
+}
+:hover.navegador, :hover.pc, :hover.mundo {
+    background-color: rgb(0, 134, 0);
+    transform: scale();
+}
+:hover.botao{
+    background-color: #FA007D;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FA007D;
+    
+}
