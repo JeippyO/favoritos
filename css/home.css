@@ -46,8 +46,13 @@
 :hover.navegador, :hover.pc, :hover.mundo{
     background-color: rgb(130, 255, 130);
 }
+:hover.navegador .botao, :hover.pc .botao, :hover.mundo .botao{
+    box-shadow: 0 0 0 2px rgb(130, 255, 130), 0 0 0 4px #36BF58;
+}
 :hover.botao{
-    background-color: #FA007D;
-    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #FA007D;
+    transform: scale(1.15);
     
+}
+a {
+    text-decoration: none;
 }
