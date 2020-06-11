@@ -1,80 +1,97 @@
-.navegador, .pc, .mundo{
-    position: absolute;
-    display: inline-block;
-    height: 100%;
-    width: calc(100%/3);
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.377);
+.navegador,
+.pc,
+.mundo {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: calc(100% / 3);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.377);
 }
-.pc{
-    left: calc(100%/3);
+.pc {
+  left: calc(100% / 3);
 }
-.mundo{
-    left: calc(100%*2/3);
+.mundo {
+  left: calc(100% * 2 / 3);
 }
 .titulo_secao {
-    font-size: 4rem;
-    font-family: sans-serif;
-    color: black;
-    width: max-content;
-    margin: 0 auto;
-    padding: 150px 0;
+  font-size: 4rem;
+  font-family: sans-serif;
+  color: black;
+  width: max-content;
+  margin: 80px auto 100px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
 }
+
 .txt_previa {
-    font-family: serif;
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 50px;
+  font-family: serif;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
-.botao{
-    width: 300px;
-    height: 50px;
-    background-color: #36BF58;
-    margin: 0 auto;
-    box-shadow: 0 0 0 2px white, 0 0 0 4px #36BF58;
+.botao {
+  width: 300px;
+  height: 50px;
+  background-color: #36bf58;
+  margin: 0 auto;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #36bf58;
 }
 .botao h1 {
-    display: block;
-    color: white;
-    font-size: 35px;
-    font-family: sans-serif;
-    width: max-content;
-    line-height: 50px;
-    margin: 0 auto;
+  display: block;
+  color: #fff;
+  font-size: 35px;
+  font-family: sans-serif;
+  width: max-content;
+  line-height: 50px;
+  margin: 0 auto;
 }
-:hover.navegador, :hover.pc, :hover.mundo{
-    background-color: rgb(130, 255, 130);
+:hover.navegador,
+:hover.pc,
+:hover.mundo {
+  background-color: rgb(130, 255, 130);
 }
-:hover.navegador h1, :hover.pc h1, :hover.mundo h1{
-    color: white;
+:hover.navegador h1,
+:hover.pc h1,
+:hover.mundo h1 {
+  color: white;
 }
-:hover.navegador p, :hover.pc p, :hover.mundo p{
-    color: white;
+:hover.navegador p,
+:hover.pc p,
+:hover.mundo p {
+  color: white;
 }
-:hover.navegador .icone_branco, :hover.pc .icone_branco, :hover.mundo .icone_branco{
-    display: inline-block;
+:hover.navegador .icone_branco,
+:hover.pc .icone_branco,
+:hover.mundo .icone_branco {
+  display: inline-block;
 }
-:hover.navegador .icone, :hover.pc .icone, :hover.mundo .icone{
-    display: none;
+:hover.navegador .icone,
+:hover.pc .icone,
+:hover.mundo .icone {
+  display: none;
 }
-:hover.navegador .botao, :hover.pc .botao, :hover.mundo .botao{
-    box-shadow: 0 0 0 2px rgb(130, 255, 130), 0 0 0 4px #36BF58;
+:hover.navegador .botao,
+:hover.pc .botao,
+:hover.mundo .botao {
+  box-shadow: 0 0 0 2px rgb(130, 255, 130), 0 0 0 4px #36bf58;
 }
-:hover.botao{
-    transform: scale(1.15);
-    
+:hover.botao {
+  transform: scale(1.15);
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-.icone, .icone_branco {
-    height: 120px;
-    width: 120px;
-    transform: translate(-50%, -50%);
-    position: relative;
-    left: 50%;
+.icone,
+.icone_branco {
+  height: 120px;
+  width: 120px;
+  position: relative;
+  left: calc(100% / 2);
+  transform: translateX(-50%);
+  margin-bottom: 50px;
 }
 .icone_branco {
-    display: none;
+  display: none;
 }
