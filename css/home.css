@@ -25,7 +25,7 @@
     font-size: 2rem;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .botao{
     width: 300px;
@@ -46,6 +46,18 @@
 :hover.navegador, :hover.pc, :hover.mundo{
     background-color: rgb(130, 255, 130);
 }
+:hover.navegador h1, :hover.pc h1, :hover.mundo h1{
+    color: white;
+}
+:hover.navegador p, :hover.pc p, :hover.mundo p{
+    color: white;
+}
+:hover.navegador .icone_branco, :hover.pc .icone_branco, :hover.mundo .icone_branco{
+    display: inline-block;
+}
+:hover.navegador .icone, :hover.pc .icone, :hover.mundo .icone{
+    display: none;
+}
 :hover.navegador .botao, :hover.pc .botao, :hover.mundo .botao{
     box-shadow: 0 0 0 2px rgb(130, 255, 130), 0 0 0 4px #36BF58;
 }
@@ -55,4 +67,14 @@
 }
 a {
     text-decoration: none;
+}
+.icone, .icone_branco {
+    height: 120px;
+    width: 120px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+}
+.icone_branco {
+    display: none;
 }
