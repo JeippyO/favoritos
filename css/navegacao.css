@@ -45,14 +45,53 @@ body {
   letter-spacing: 2px;
 }
 
+.menu-navegacao ul a:not(.active):hover {
+  color: white;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 3px;
+}
+
 .thumb-sites {
   margin: 50px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .thumb {
   background-color: #cccccc;
-  width: 300px;
-  height: 300px;
+  width: calc(250px * (16 / 9));
+  height: 250px;
+  background: url(../img/w3school.jpg);
+  background-size: cover;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+span {
+  display: none;
+}
+
+.thumb:hover span {
+  display: inline-block;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  font-size: 1.5em;
+  background: rgba(130, 255, 130, 0.8);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.active {
+  padding-bottom: 3px;
+  border-bottom: 3px solid #000;
 }
