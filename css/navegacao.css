@@ -10,7 +10,7 @@ body {
 }
 
 .menu {
-  background-color: rgb(130, 255, 130);
+  background-color: #36bf58;
   height: 80px;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ body {
 
 .logo a,
 .menu-navegacao ul a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -33,7 +33,6 @@ body {
 
 .logo a {
   font-size: 2em;
-
   letter-spacing: 2px;
 }
 
@@ -47,8 +46,8 @@ body {
 }
 
 .menu-navegacao ul a:not(.active):hover {
-  color: white;
-  border-bottom: 3px solid #fff;
+  color: #000;
+  border-bottom: 3px solid #000;
   padding-bottom: 3px;
 }
 
@@ -82,12 +81,12 @@ span {
 
 .thumb:hover span {
   display: inline-block;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2.5px;
   font-size: 1.5em;
-  background: rgba(130, 255, 130, 0.7);
+  background: rgba(54, 191, 88, 0.8);
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -101,5 +100,5 @@ span {
 
 .active {
   padding-bottom: 3px;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #fff;
 }
