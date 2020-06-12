@@ -55,6 +55,7 @@ body {
   margin: 50px 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .thumb-img1 {
@@ -65,6 +66,18 @@ body {
   background: url(../img/origamid.jpg);
 }
 
+.thumb-img3 {
+  background: url(../img/op.gg.jpg);
+}
+
+.thumb-img4 {
+  background: url(../img/thewitcher3wiki.jpg);
+}
+
+.thumb-img5 {
+  background: url(../img/wow.jpg);
+}
+
 .thumb {
   background-color: #cccccc;
   width: calc(250px * (16 / 9));
@@ -73,6 +86,7 @@ body {
   position: relative;
   border: 1px solid #000;
   border-radius: 10px;
+  margin-bottom: 67.12px;
 }
 
 span {
